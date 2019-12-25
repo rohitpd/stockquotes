@@ -9,7 +9,8 @@ class bhavcopydisplay(object):
 		@cherrypy.expose
 		def index(self):
 
-				r =redis.StrictRedis('localhost', 6379, charset="utf-8", decode_responses=True)
+				r=redis.StrictRedis(host="ec2-3-216-229-47.compute-1.amazonaws.com",port="11379",password="p4a681dd0f233ae5dd1445536b43aea387990061d3c851c91536a44351c3d2fb2",charset="utf-8", decode_responses=True)
+				#r =redis.StrictRedis('localhost', 6379, charset="utf-8", decode_responses=True)
 				html=""
 
 				html=html+'<html><head>'
@@ -65,7 +66,8 @@ class bhavcopydisplay(object):
 
 		@cherrypy.expose
 		def result(self, sharename="ABB"):
-				r =redis.StrictRedis('localhost', 6379, charset="utf-8", decode_responses=True)
+				#r =redis.StrictRedis('localhost', 6379, charset="utf-8", decode_responses=True)
+				r=redis.StrictRedis(host="ec2-3-216-229-47.compute-1.amazonaws.com",port="11379",password="p4a681dd0f233ae5dd1445536b43aea387990061d3c851c91536a44351c3d2fb2",charset="utf-8", decode_responses=True)
 				stockkeys=r.keys()
 
 				for stockid in stockkeys:
