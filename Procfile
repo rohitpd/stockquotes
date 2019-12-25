@@ -1,1 +1,1 @@
-"web: python bhavcopy.py" 
+web: python app.py
