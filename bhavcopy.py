@@ -53,7 +53,7 @@ class bhavcopydisplay(object):
 					high=stockquote['high']
 					low=stockquote['low']
 					close=stockquote['close']
-					html=html+f'<tr><td>{code}</td><td>{name}</td><td>{open1}</td><td>{high}</td><td>{low}</td><td>{close}</td></tr>)'
+					html=html+f'<tr><td>{code}</td><td>{name}</td><td>{open1}</td><td>{high}</td><td>{low}</td><td>{close}</td></tr>'
 
 				html=html+'</tbody>'
 				html=html+'</table>'
@@ -113,7 +113,7 @@ class bhavcopydisplay(object):
 											high=stockrow['high']
 											low=stockrow['low']
 											close=stockrow['close']
-											html=html+f'<tr>\n<td>{code}</td>\n<td>{name}</td>\n<td>{open1}</td>\n<td>{high}</td>\n<td>{low}</td>\n<td>{close}</td>,</tr>")'
+											html=html+f'<tr><td>{code}</td><td>{name}</td><td>{open1}</td><td>{high}</td><td>{low}</td><td>{close}</td></tr>'
 
 											html=html+'</tbody>'
 											html=html+'</table>'
